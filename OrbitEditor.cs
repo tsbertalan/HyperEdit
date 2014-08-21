@@ -78,12 +78,12 @@ namespace HyperEdit
                         Contents.Add(new Button("Set", SetSimple));
                         break;
                     case EditMode.Complex:
-                        Contents.Add(new TextBox("inc", orbit.inclination.ToString()));
-                        Contents.Add(new TextBox("e", orbit.eccentricity.ToString()));
-                        Contents.Add(new TextBox("sma", orbit.semiMajorAxis.ToString()));
-                        Contents.Add(new TextBox("lan", orbit.LAN.ToString()));
-                        Contents.Add(new TextBox("w", orbit.argumentOfPeriapsis.ToString()));
-                        Contents.Add(new TextBox("mEp", orbit.meanAnomalyAtEpoch.ToString()));
+                        Contents.Add(new TextBox("inclination", orbit.inclination.ToString()));
+                        Contents.Add(new TextBox("eccentricity", orbit.eccentricity.ToString()));
+                        Contents.Add(new TextBox("semi-major axis", orbit.semiMajorAxis.ToString()));
+                        Contents.Add(new TextBox("longitude of ascending node", orbit.LAN.ToString()));
+                        Contents.Add(new TextBox("argument of periapsis", orbit.argumentOfPeriapsis.ToString()));
+                        Contents.Add(new TextBox("mean anomaly at epoch", orbit.meanAnomalyAtEpoch.ToString()));
                         Contents.Add(new TextBox("epoch", orbit.epoch.ToString()));
                         Contents.Add(new TextBox("body", orbit.referenceBody.bodyName));
                         Contents.Add(new Button("Set", SetComplex));
